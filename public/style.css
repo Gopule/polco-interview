@@ -1,0 +1,132 @@
+body {
+  background-color: #e2e2e2;
+  font-family: "Raleway", sans-serif;
+}
+
+#app {
+  display: flex;
+  justify-content: center;
+}
+
+#main {
+  margin-top: 12vh;
+  background-color: white;
+  border-radius: 10px;
+  width: 55vw;
+  height: 70vh;
+  overflow: scroll;
+  box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.2);
+}
+
+hr {
+  height: 1px;
+  background-color: rgb(230, 230, 230);
+  border: none;
+}
+
+.search-bar {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #e4e4e4;
+  padding: 10px;
+  margin: 10px;
+  width: 95%;
+  font-size: 20px;
+}
+
+.search-bar::placeholder {
+  font-size: 20px;
+  font-weight: lighter;
+  color: #bebebe;
+}
+
+.search-bar:focus {
+  outline: none;
+  border-bottom-color: grey;
+}
+
+.single-student {
+  display: flex;
+  /* justify-content: space-between; */
+  padding: 5px;
+}
+
+.single-student img {
+  align-self: top;
+  border: 1px solid #cfcfcf;
+  border-radius: 50%;
+  height: 140px;
+  width: 140px;
+  margin: 0 15px 0 15px;
+  position: relative;
+}
+
+.student-description {
+  padding-left: 25px;
+}
+
+.student-description * {
+  margin: 0;
+}
+
+.student-description p {
+  font-size: 20px;
+  padding-left: 20px;
+  margin: 5px;
+}
+
+.student-description input {
+  font-size: 20px;
+  font-weight: lighter;
+  margin: 10px 0 10px 20px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #e4e4e4;
+  padding: 10px;
+}
+
+.student-description input::placeholder {
+  font-size: 20px;
+  font-weight: lighter;
+  color: #bebebe;
+}
+
+.student-description input:focus {
+  outline: none;
+  border-bottom-color: grey;
+}
+
+.student-name {
+  margin-bottom: 10px;
+  font-size: 45px;
+  text-transform: uppercase;
+}
+
+.drop-icon {
+  height: 2rem;
+  width: 2rem;
+  color: rgb(170, 170, 170);
+  margin-left: auto;
+  padding: 15px;
+}
+
+.all-tests {
+  padding: 15px 0 10px 0;
+}
+
+.single-grade {
+  display: flex;
+}
+
+.student-tags {
+  display: flex;
+  padding-left: 20px;
+}
+
+.tags {
+  font-size: 20px;
+  padding: 7px;
+  margin: 3px;
+  background-color: #e4e4e4;
+  border-radius: 7px;
+}
