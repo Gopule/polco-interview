@@ -25,7 +25,7 @@ export default class Main extends React.Component {
     this.setState({ loading: true });
     setTimeout(() => {
       this.setState({ loading: false });
-    }, 7500);
+    }, 750);
     try {
       const res = await axios.get(
         "https://api.hatchways.io/assessment/students"
