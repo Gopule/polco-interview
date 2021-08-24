@@ -8,6 +8,16 @@ body {
   justify-content: center;
 }
 
+#app:first-child {
+  align-self: center;
+}
+
+#load-spinner {
+  position: absolute;
+  left: 45%;
+  top: 35%;
+}
+
 #main {
   margin-top: 12vh;
   background-color: white;
