@@ -1,7 +1,6 @@
 const path = require("path");
 const express = require("express");
 const app = express();
-``;
 module.exports = app;
 
 app.use(express.static(path.join(__dirname, "..", "public")));
