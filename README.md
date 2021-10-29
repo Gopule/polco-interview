@@ -1,5 +1,3 @@
-# polco assessment
-
 ## Setup
 
 ### MacOS/Linux
