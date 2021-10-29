@@ -3,7 +3,7 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
-#app {
+#root {
   display: flex;
   justify-content: center;
 }

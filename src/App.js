@@ -1,19 +1,19 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import RingLoader from "react-spinners/RingLoader";
-import SearchBar from "./SearchBar";
-import StudentDetails from "./StudentDetails";
-import StudentsTests from "./StudentsTests";
-import Tags from "./Tags";
-import TagInput from "./TagInput";
-import Accordian from "./Accordian";
+import SearchBar from "./components/SearchBar";
+import StudentDetails from "./components/StudentDetails";
+import StudentsTests from "./components/StudentsTests";
+import Tags from "./components/Tags";
+import TagInput from "./components/TagInput";
+import Accordian from "./components/Accordian";
 
-const Main = () => {
+const App = () => {
   const [loading, setLoading] = useState(false);
   const [students, setStudents] = useState([]);
   const [searchName, setSearchName] = useState("");
   const [searchTag, setSearchTag] = useState("");
-  const [tagTitle, setTagTitle] = useState({});
+  const [tagTitle, setTagTitle] = useState({ id: "", title: "" });
   const [isActive, setIsActive] = useState([]);
   const [tags, setTags] = useState([]);
 
@@ -125,4 +125,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default App;

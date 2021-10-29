@@ -8,22 +8,23 @@ const TagInput = ({ tagTitle, setTagTitle, setTags, tags, student }) => {
       autoComplete="off"
       placeholder="Add a tag"
       className="add-tag"
-      value={tagTitle[student.id] || ""}
+      value={tagTitle.id === student.id ? tagTitle.title : ""}
       onChange={(event) => {
-        let newTitle = { ...tagTitle };
-        newTitle[student.id] = event.target.value;
-        setTagTitle(newTitle);
+        const studentsTagTitle = { ...tagTitle };
+        studentsTagTitle.id = student.id;
+        studentsTagTitle.title = event.target.value;
+        setTagTitle(studentsTagTitle);
       }}
       onKeyDown={(evt) => {
         if (evt.key === "Enter") {
           setTags([
             ...tags,
             {
-              studentId: Object.keys(tagTitle)[0],
-              title: Object.values(tagTitle)[0],
+              studentId: tagTitle.id,
+              title: tagTitle.title,
             },
           ]);
-          setTagTitle("");
+          setTagTitle({ id: "", title: "" });
         }
       }}
     />
